@@ -16,10 +16,10 @@ namespace DataAccess.Concrete
         {
             _cars = new List<Car>
             {
-                new Car{ Id=1, BrandId =1, ColorId =1, DailyPrice =70, Description="Black Audi", ModelYear = "2006"},
-                new Car{ Id=2, BrandId=1, ColorId =2, DailyPrice = 100, Description ="Grey Audi", ModelYear = "2010"},
-                new Car{ Id=3, BrandId=2, ColorId =1, DailyPrice =140, Description="Black BMW", ModelYear = "2016"},
-                new Car{ Id=4, BrandId=3, ColorId=3, DailyPrice=120, Description="White Volvo", ModelYear = "2012"}
+                new Car{ Id=1, BrandId =1, ColorId =1, DailyPrice =70, Description="Black Audi", ModelYear = 2006},
+                new Car{ Id=2, BrandId=1, ColorId =2, DailyPrice = 100, Description ="Grey Audi", ModelYear = 2010},
+                new Car{ Id=3, BrandId=2, ColorId =1, DailyPrice =140, Description="Black BMW", ModelYear = 2016},
+                new Car{ Id=4, BrandId=3, ColorId=3, DailyPrice=120, Description="White Volvo", ModelYear = 2012}
             };
         }
 
