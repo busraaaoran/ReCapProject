@@ -24,9 +24,19 @@ namespace ConsoleUI
 
             //colorManager.Add(new Color { ColorId = 5, ColorName = "Blue" });
 
-            foreach (var color in colorManager.GetAll())
+            var result = colorManager.GetAll();
+
+            if (result.Success)
             {
-                Console.WriteLine(color.ColorName);
+                foreach (var color in result.Data)
+                {
+                    Console.WriteLine(color.ColorName);
+                }
+            }
+
+            else
+            {
+                Console.WriteLine(result.Message);
             }
 
 
@@ -39,9 +49,18 @@ namespace ConsoleUI
             //brandManager.Update(new Brand { BrandId = 4, BrandName = "Skoda" });
             //brandManager.Update(new Brand { BrandId = 4, BrandName = "Renault" });
 
-            foreach (var brand in brandManager.GetAll())
+            var result = brandManager.GetAll();
+
+            if (result.Success)
             {
-                Console.WriteLine(brand.BrandName);
+                foreach (var brand in result.Data)
+                {
+                    Console.WriteLine(brand.BrandName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
             }
         }
 
@@ -54,10 +73,19 @@ namespace ConsoleUI
             //carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, CarName = "A3 Sportback 1.6 Attraction", ModelYear = 2010 });
 
             //carManager.Delete(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, ModelYear = 2010, CarName = "A3 Sportback 1.6 Attraction", Id = 18 });
+            var result = carManager.GetCarDetails();
 
-            foreach (var car in carManager.GetCarDetails())
+            if (result.Success)
             {
-                Console.WriteLine(car.BrandName+"/"+car.CarName+"/"+car.ColorName+"/"+car.DailyPrice);
+                foreach (var car in result.Data)
+                {
+                    Console.WriteLine(car.BrandName + "/" + car.CarName + "/" + car.ColorName + "/" + car.DailyPrice);
+                }
+            }
+
+            else
+            {
+                Console.WriteLine(result.Message);
             }
 
             
