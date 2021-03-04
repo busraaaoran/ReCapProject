@@ -10,11 +10,11 @@ namespace Business.Constants
         public static string CarDeleted = "Car Deleted.";
         public static string CarUpdated = "Car Updated";
         public static string CarInvalidation = "Invalid Car Name!";
-        internal static string BrandAdded;
-        internal static string BrandDeleted;
-        internal static string BrandUpdated;
-        internal static string ColorAdded;
-        internal static string ColorDeleted;
-        internal static string ColorUpdated;
+        public static string BrandAdded = "Brand Added.";
+        public static string BrandDeleted = "Brand Deleted.";
+        public static string BrandUpdated = "Brand Updated.";
+        public static string ColorAdded = "Color Added.";
+        public static string ColorDeleted = "Color Deleted.";
+        public static string ColorUpdated = "Color Updated.";
     }
 }
