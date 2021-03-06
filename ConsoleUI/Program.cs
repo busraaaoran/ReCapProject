@@ -10,7 +10,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarTest();
+            //CarTest();
 
             //BrandTest();
 
@@ -20,20 +20,21 @@ namespace ConsoleUI
 
             //UserTest();
 
-            //RentalTest();
+            RentalTest();
         }
 
         private static void RentalTest()
         {
             RentalManager rentalManager = new RentalManager(new EfRentalDal());
-
+            //rentalManager.Add(new Rental { CarId = 4, CustomerId = 1, RentDate = DateTime.Now });
+            //rentalManager.Delete(new Rental { RentDate = DateTime.Now, RentalId = 5, CustomerId = 1, CarId = 4 , ReturnDate = new DateTime(1,01,0001)});
             var result = rentalManager.GetAll();
 
             if (result.Success)
             {
                 foreach (var rental in result.Data)
                 {
-                    Console.WriteLine(rental.CarId + ")rented at " + rental.RentDate);
+                    Console.WriteLine("Car with ID: "+rental.CarId + " rented at " + rental.RentDate);
                 }
             }
             else
