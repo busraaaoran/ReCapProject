@@ -72,7 +72,8 @@ namespace ConsoleUI
 
             //carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, CarName = "A3 Sportback 1.6 Attraction", ModelYear = 2010 });
 
-            //carManager.Delete(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, ModelYear = 2010, CarName = "A3 Sportback 1.6 Attraction", Id = 18 });
+            //carManager.Delete(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, ModelYear = 2010, CarName = "A3 Sportback 1.6 Attraction", Id = 22 });
+
             var result = carManager.GetCarDetails();
 
             if (result.Success)
