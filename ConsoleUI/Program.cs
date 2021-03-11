@@ -10,7 +10,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            //CarTest();
+            CarTest();
 
             //BrandTest();
 
@@ -20,7 +20,7 @@ namespace ConsoleUI
 
             //UserTest();
 
-            RentalTest();
+            //RentalTest();
         }
 
         private static void RentalTest()
@@ -133,9 +133,9 @@ namespace ConsoleUI
 
             //carManager.Add(new Car { BrandId = 2, ColorId = 4, DailyPrice = 440, CarName = "118i First Edition Sport Line", ModelYear = 2020 });
 
-            carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, CarName = "A3 Sportback 1.6 Attraction", ModelYear = 2010 });
+            //carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, CarName = "A3 Sportback 1.6 Attraction", ModelYear = 2010 });
 
-            //carManager.Delete(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, ModelYear = 2010, CarName = "A3 Sportback 1.6 Attraction", Id = 22 });
+            //carManager.Delete(new Car { BrandId = 1, ColorId = 2, DailyPrice = 230, ModelYear = 2010, CarName = "A3 Sportback 1.6 Attraction", Id = 10 });
 
             var result = carManager.GetCarDetails();
 
