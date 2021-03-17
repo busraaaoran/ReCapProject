@@ -26,6 +26,8 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<Rental> Rentals { get; set; }
 
 
+        public DbSet<CarImage> CarImages { get; set; }
+
 
     }
 }
