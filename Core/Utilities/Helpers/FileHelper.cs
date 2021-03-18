@@ -22,11 +22,13 @@ namespace Core.Utilities.Helpers
                 }
             }
 
-            var result = newPath(file);
+            var r = newPath(file);
+            var result = (string)r;
+            
 
-            File.Move(sourcePath, result.ToString());
+            File.Move(sourcePath, result);
 
-            return result.ToString();
+            return result;
         }
          
         public static IResult Delete(string path)
@@ -45,7 +47,9 @@ namespace Core.Utilities.Helpers
 
         public static string Update(string sourcePath, IFormFile file)
         {
-            var result = newPath(file);
+            var r = newPath(file);
+            var result = (string)r;
+
             if (sourcePath.Length > 0)
             {
                 using (var stream = new FileStream(result, FileMode.Create))

@@ -26,5 +26,9 @@ namespace Business.Constants
         public static string RentalDeleted = "Rental Feleted.";
         public static string RentalUpdated = "Rental Updated.";
         public static string RentalInvalidation = "Car is still on renting!";
+        internal static string CarImageLimitExceed;
+        internal static string CarImageAdded;
+        internal static string CarImageDeleted;
+        internal static string CarImageUpdated;
     }
 }
